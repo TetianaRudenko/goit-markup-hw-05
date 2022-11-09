@@ -52,7 +52,7 @@
       <section class="hero section">
          <div class="container hero-content">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button primary hero-em pointer">Замовити послугу</button>
+            <button type="button" class="button primary hero-em pointer" data-modal-open>Замовити послугу</button>
          </div>
       </section>
 
@@ -108,9 +108,24 @@
          <div class="container">
          <h2 class="section-title works-title">Чим ми займаємося</h2>       
             <ul class="works list">
-               <li class="item"><img class="pic" src="./images/img1.jpg" alt="робочий стіл за яким програміст прописує код" width="370"></li>
-               <li class="item"><img class="pic" src="./images/img2.jpg" alt="на екрані ноутбука прототип додатку телефона, що тримає в лівій руці" width="370"></li>
-               <li class="item"><img class="pic" src="./images/img3.jpg" alt="кольорова палітра на екрані планшету, який в лівій руці" width="370"></li>
+               <li class="item descr">
+                  <img class="pic" src="./images/img1.jpg" alt="робочий стіл за яким програміст прописує код" width="370">
+                  <div class="descr-thumb">
+                     <h3 class="work-descr">Десктопні додатки</h3>
+                  </div>
+               </li>
+               <li class="item descr">
+                  <img class="pic" src="./images/img2.jpg" alt="на екрані ноутбука прототип додатку телефона, що тримає в лівій руці" width="370">
+                  <div class="descr-thumb">
+                     <h3 class="work-descr">Мобільні додатки</h3>
+                  </div>
+               </li>
+               <li class="item descr">
+                  <img class="pic" src="./images/img3.jpg" alt="кольорова палітра на екрані планшету, який в лівій руці" width="370">
+                  <div class="descr-thumb">
+                     <h3 class="work-descr">Дизайнерські рішення</h3>
+                  </div>
+               </li>
             </ul>
          </div>
       </section>
@@ -341,7 +356,7 @@
       </section>
   </main>
 
-  <!--footer-->
+<!--footer-->
    <footer class="footer">
       <div class="container">
          <div class="footer-container">
@@ -389,5 +404,19 @@
          </div>  
       </div>
    </footer>
+
+
+<!--modal window-->
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button class="close-btn" data-modal-close>
+            <svg class="close-icon">
+               <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+         </button>
+      </div>
+   </div>
+   
+   <script src="./js/modal.js"></script>
 </body>
 </html>
